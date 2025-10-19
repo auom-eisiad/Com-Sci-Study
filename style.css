@@ -29,6 +29,7 @@ body {
 
 .top {
     padding: 1rem;
+    padding-bottom: 0;
 }
 
 nav {
@@ -76,7 +77,7 @@ header.highlight {
 p {
     padding-top: 1rem;
     font-size: 1.5rem;
-    flex: 3.5;
+    flex: 8;
     flex-direction: column;
     text-align: left;
 }
@@ -88,6 +89,7 @@ p {
     flex: 1;
     display: flex;
     min-height: 0;
+    gap: 2;
 }
 
 .sidebar {
@@ -104,7 +106,7 @@ p {
 h1 {
     font-size: 3rem;
     text-shadow: 1px 1px 2px #ffffff, 2px 2px 2px #ffffff, -2px -2px 2px #ffffff;
-    flex: 1;
+    flex: 4;
     flex-direction: column;
 }
 
@@ -120,8 +122,43 @@ h3 {
 main {
     flex: 1;
     padding: 1rem;
+    padding-top: 0;
+    overflow-y: auto;
     flex-direction: column;
     border-radius: 1rem;
     text-align: center;
-    background-color: var(--main);
+}
+
+.content {
+    padding: 1rem;
+    background-color: var(--fontColor);
+    overflow-y: auto;
+    flex-direction: column;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--third);
+    height: 100%;
+    max-height: 100vh;
+}
+
+.input {
+    border-radius: 5px;
+    height: 2rem;
+}
+
+button {
+    border-radius: 1rem;
+    background-color: var(--fontColor);
+    padding: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--third);
+    cursor: pointer;
+}
+
+.checkbox-container {
+    font-size: 1.2rem;
+    flex: auto;
+    flex-direction: row;
 }
