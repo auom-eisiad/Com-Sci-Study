@@ -1,0 +1,38 @@
+:root {
+    --main: #9d906f;
+    --secondary: #bfb394;
+    --third: #efe7d4;
+    --fontColor: #635335;
+    --font: 'Caveat Brush';
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font);
+    color: var(--fontColor);
+}
+
+title {
+    color: var(--fontColor);
+    background-color: var(--third);
+}
+
+body {
+    background-color: var(--third);
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav {
+    background-color: var(--secondary);
+}
+
+nav:hover {
+    background-color: var(--main);
+}
+
+header {
+    background-color: var(--secondary);
+}
+
