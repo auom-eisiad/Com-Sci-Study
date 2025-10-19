@@ -131,7 +131,7 @@ main {
 
 .content {
     padding: 1rem;
-    background-color: var(--fontColor);
+    background-color: var(--main);
     overflow-y: auto;
     flex-direction: column;
     border-radius: 1rem;
@@ -161,4 +161,32 @@ button:hover {
     font-size: 1.2rem;
     flex: auto;
     flex-direction: row;
+}
+
+.course {
+    padding: 0.5rem;
+    background-color: var(--secondary);
+    color: var(--third);
+    border-radius: 5rem;
+
+}
+
+.tags {
+    color: #efe7d4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--fontColor); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--fontColor); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--#fff); 
 }
