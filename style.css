@@ -25,6 +25,7 @@ body {
 }
 
 nav {
+    display: flex;
     background-color: var(--secondary);
 }
 
@@ -34,5 +35,10 @@ nav:hover {
 
 header {
     background-color: var(--secondary);
-}
+}  
 
+.sidebar {
+    width: 200px;
+    padding: 1rem;
+    border-right: 1px;
+}
