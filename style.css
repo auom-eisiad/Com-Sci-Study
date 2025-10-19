@@ -27,6 +27,10 @@ body {
     flex-direction: column;
 }
 
+.top {
+    padding: 1rem;
+}
+
 nav {
     padding: 1rem;
     padding-top: 0.1rem;
@@ -46,7 +50,7 @@ nav a{
     background-color: var(--secondary);
     text-decoration: none;
     font-size: 1.5rem;
-    transition: color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
@@ -54,8 +58,12 @@ nav a:hover {
 }
 
 header {
+    flex: 1;
+    display: flex;
+    min-height: 0;
     padding: 1rem;
-    padding-top: 0;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
     text-align: left;
     background-color: var(--secondary);
     transition: color 0.3s ease;
@@ -65,28 +73,55 @@ header.highlight {
     background-color: var(--main);
 }
 
+p {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    flex: 3.5;
+    flex-direction: column;
+    text-align: left;
+}
+
 .container {
     padding: 1rem;
     padding-top: 2rem;
+    padding-left: 2rem;
     flex: 1;
     display: flex;
     min-height: 0;
 }
 
 .sidebar {
-    width: 30%;
+    width: 25%;
     padding: 1rem;
     border-radius: 1rem;
     text-align: left;
     background-color: var(--main);
     overflow-y: auto;
-    height: 60%;
+    height: 65%;
     max-height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px #ffffff, 2px 2px 2px #ffffff, -2px -2px 2px #ffffff;
+    flex: 1;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    padding-left: 1rem;
+    font-size: 1.5rem;
 }
 
 main {
     flex: 1;
     padding: 1rem;
-    overflow-y: auto;
     flex-direction: column;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: var(--main);
 }
